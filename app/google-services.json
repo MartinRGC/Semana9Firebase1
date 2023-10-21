@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "490892729050",
+    "project_id": "preesan2023-96cb2",
+    "storage_bucket": "preesan2023-96cb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490892729050:android:af43cbc37e56ec1023e3e3",
+        "android_client_info": {
+          "package_name": "com.example.semana9firebase1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoU76cTLKxt7LM62T3k-thSCPOHWan1GI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
