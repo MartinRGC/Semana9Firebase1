@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Semana9Firebase1</string>
+    <string name="btnlogin">LOGIN\n</string>
+    <string name="btnregister">REGISTER</string>
+    <string name="btnreg">REGISTER</string>
+    <string name="hfullname">FullName</string>
+    <string name="hcountry">Country</string>
+    <string name="hemail">Email</string>
+    <string name="hpassword">Password</string>
 </resources>
