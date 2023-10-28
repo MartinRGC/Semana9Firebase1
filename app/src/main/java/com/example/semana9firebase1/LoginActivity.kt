@@ -20,7 +20,9 @@ class LoginActivity : AppCompatActivity() {
         val btnlogin: Button = findViewById(R.id.btnlogin)
         val btngregister: Button = findViewById(R.id.btnregister)
 
-
+        btngregister.setOnClickListener {
+            startActivity(Intent(this,RegisterActivity::class.java))
+        }
         btnlogin.setOnClickListener {
             val correo = txtemail.text.toString()
             val clave = txtpassword.text.toString()
@@ -33,7 +35,7 @@ class LoginActivity : AppCompatActivity() {
                                 "Inicio de sesion exitoso",
                                 Snackbar.LENGTH_LONG
                             ).show()
-                        startActivity(Intent(this,MainActivity::class.java))
+                        startActivity(Intent(this,PrincipalActivity::class.java))
                     }else{
                         Snackbar
                             .make(findViewById(android.R.id.content),

@@ -40,13 +40,19 @@ class RegisterActivity : AppCompatActivity() {
 
                         val userModel = UserModel(correo,clave,nombrecompleto,pais,uid.toString())
                         collectionRef.add(userModel)
-                            .addOnCompleteListener{ error ->
+                            .addOnCompleteListener{ }.addOnFailureListener{ error ->
                                 Snackbar
                                     .make(findViewById(android.R.id.content),
                                         "Ocurrio un error al registrar el modelo",
                                         Snackbar.LENGTH_LONG
                                     ).show()
                             }
+                        Snackbar
+                            .make(
+                                findViewById(android.R.id.content)
+                                ,"Registro exitoso del usuario"
+                                , Snackbar.LENGTH_LONG
+                            ).show()
                     }else{
                         Snackbar
                             .make(findViewById(android.R.id.content),
